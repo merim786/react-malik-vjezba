@@ -1,18 +1,12 @@
 import React from "react";
 import Login from "./Login";
 import SignUp from "./SignUp";
-import {
-  BrowserRouter as Router,
-  Redirect,
-  Switch,
-  Route,
-  Link,
-} from "react-router-dom";
+import Crud from "./components/CrudComponent";
 
 function App() {
   return (
     <div>
-      <Login />
+      <Crud />
     </div>
   );
 }
