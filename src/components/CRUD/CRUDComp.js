@@ -1,7 +1,8 @@
 import React from "react";
-import TableUser from "./components/tables/TableUser";
+import "bootstrap/dist/css/bootstrap.css";
+import Table from "../tables/TableUser";
 
-const App = () => {
+const CRUDComp = () => {
   return (
     <div>
       <div className="container">
@@ -12,12 +13,11 @@ const App = () => {
           </div>
           <div className="col">
             <h2>View users</h2>
-            <TableUser />
+            <Table />
           </div>
         </div>
       </div>
     </div>
   );
 };
-
-export default App;
+export default CRUDComp;

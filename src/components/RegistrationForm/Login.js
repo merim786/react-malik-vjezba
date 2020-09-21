@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.css";
 import React from "react";
-import SignUp from "./SignUp";
+import SignUp from "./signUp/SignUp";
 import {
   BrowserRouter as Router,
   Switch,
