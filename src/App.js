@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import TableUser from "./components/tables/TableUser";
 
 const App = () => {
+  /*Some user data*/
+  const usersData = [
+    { id: 1, name: "Malik", username: "Lemes" },
+    { id: 2, name: "Merim", username: "Bungur" },
+    { id: 3, name: "Mahir", username: "Mahirovic" },
+    { id: 4, name: "Amar", username: "Alijagic" },
+  ];
+
+  const [users, setUsers] = useState(usersData);
+
   return (
     <div>
       <div className="container">
@@ -12,7 +22,7 @@ const App = () => {
           </div>
           <div className="col">
             <h2>View users</h2>
-            <TableUser />
+            <TableUser users={users} />
           </div>
         </div>
       </div>
